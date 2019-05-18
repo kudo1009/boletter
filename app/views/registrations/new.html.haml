@@ -5,6 +5,9 @@
       スクールの卒業課題とは別に作ってみました。
     %p.by
       開発者: Kohei Kudo
+    - if notice
+      %p
+        .alert.alert-info= notice
   .col-xs-6.right-content
     = form_for @user, url: registrations_path, method: :post do |f|
       %h2
